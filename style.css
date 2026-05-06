@@ -44,7 +44,17 @@ i {
   color: #FFF;
   background-color: transparent;
   transition: background-color 0.8s;
+  top: 20px;
+  right: 20px;
+  position: absolute;
 }
+.cart-container{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
 
 .header-button:hover {
   border: 1px solid #d34040;
@@ -65,6 +75,7 @@ i {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position:relative;
   }
   .header-content i {
     margin-top: 16px;
