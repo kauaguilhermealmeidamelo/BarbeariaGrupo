@@ -44,7 +44,17 @@ i {
   color: #FFF;
   background-color: transparent;
   transition: background-color 0.8s;
+  top: 20px;
+  right: 20px;
+  position: absolute;
 }
+.cart-container{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
 
 .header-button:hover {
   border: 1px solid #d34040;
@@ -65,6 +75,7 @@ i {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position:relative;
   }
   .header-content i {
     margin-top: 16px;
@@ -77,7 +88,7 @@ i {
     
   }
   .header-button {
-    display: none;
+    display: flex;
   }
 .container {
   max-width: 1440px;
@@ -166,7 +177,7 @@ i {
   }
 }
 .about {
-  background-color: #370000;
+  background-color: #000000;
   overflow: hidden;
   color: #FFF;
 }
@@ -391,13 +402,96 @@ svg {
 img {
   width: 100%;
 }
+.img-footer {
+  width: 100px;
+  
+}
 
 a {
   cursor: pointer;
   text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
 
-.footer-logo {
-  width: 75px;
-  border-radius: 100%;
+/*botão carrinho de compras funcional*/
+.cart-sidebar{
+
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 350px;
+  height: 100vh;
+  max-width: 100%;
+  background: #6e2424 ;
+  z-index: 9999;
+  padding: 20px;
+  transition: right 0.4s ease;
+  box-shadow: -4px 0 20px rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+.cart-sidebar.active{
+right: 0;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.cart-header button{
+  background: #d94140;
+  color: aliceblue;          
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+}
+
+.cart-overlay {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0 ,0.6);
+  z-index: 9998;
+  display: none;
+
+}
+
+.cart-overlay.active{
+display: block;
+}
+
+.finalizar-btn {
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px;
+  background: #d94140;
+  color: aliceblue;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+
+}
+
+@media screeen and (max-width: 480px) {
+.cart-sidebar {
+  width: 100%;
+  right: -100%;
+}
+
+body{
+  overflow: hidden;
+}
+.cart-sidebar h2{
+  color: aliceblue;
+}
+
+.cart-sidebar p{
+  color:aliceblue ;
+}
+
+
 }

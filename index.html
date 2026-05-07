@@ -45,8 +45,8 @@
           />
         </div>
 
-        <div data-aos="fade-down">
-          <a class="header-button" href="#">
+        <div class="cart-container" data-aos="fade-down">
+          <a class="header-button" onclick="abrirCarrinho()">
             🛒
           </a>
         </div>
@@ -55,7 +55,7 @@
 
       <main class="hero container" data-aos="fade-up" data-aos-delay="400">
         <h1> Sua loja favorita para comprar consoles e periféricos.</h1>
-        <p>Horário de funcionamento: 09:00 ás 19:00</p>
+      
         <a 
           href="https://api.whatsapp.com/send?phone=61998765432&text=Quero%20promoção%20AGORA%20!" 
           class="button-contact" 
@@ -74,7 +74,7 @@
     <div class="container about-content">
       <div data-aos="zoom-in" data-aos-delay="100">
         <img 
-          src="assets/images.png" 
+          src="./assets/ChatGPT Image 6 de mai. de 2026, 15_17_39.png" 
           alt="Imagem sobre a loja"
         />
       </div>
@@ -169,6 +169,8 @@
 
   <div class="services">
     <h2>Venha conhecer</h2>
+    <p>Horário de funcionamento</p>
+    <p>7:00 ás 22:00</p>
   </div>
 
   <iframe
@@ -210,7 +212,26 @@
     <span class="tooltip-text">Veja as Promoções</span>
   </a>
 
+  
+
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h2>Meu Carrinho</h2>
+      <button onclick="fecharCarrinho()">X</button>
+    </div>
+
+    <div id="cartItems"><p>Seu carrinho está vazio.</p></div>
+
+    <button onclick="finalizar()" class="finalizar-btn">Finalizar compra </button>
+  </div>
+
+  <div class="cart-overlay" id="cartOverlay" onclick="fecharCarrinho()"></div>
+
+  
+
 
   <script src="script.js"></script>
+  
+
 </body>
 </html>
