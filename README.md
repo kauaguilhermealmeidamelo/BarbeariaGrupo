@@ -1,13 +1,13 @@
 https://kauaguilhermealmeidamelo.github.io/BarbeariaGrupo/#
 
 
-# 🎮 Gaka
+#  Gaka
 
 Projeto desenvolvido para apresentar uma loja virtual moderna de videogames, com visual responsivo, animações suaves e carrinho lateral interativo.
 
 ---
 
-## 🚀 Tecnologias utilizadas
+##  Tecnologias utilizadas
 
 - HTML5
 - CSS3
@@ -16,7 +16,7 @@ Projeto desenvolvido para apresentar uma loja virtual moderna de videogames, com
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 - Layout moderno e responsivo
 - Catálogo de produtos
@@ -28,13 +28,13 @@ Projeto desenvolvido para apresentar uma loja virtual moderna de videogames, com
 
 ---
 
-## 📸 Preview
+##  Preview
 
 <img width="100%" src="assets/preview.png">
 
 ---
 
-## 📂 Estrutura do projeto
+##  Estrutura do projeto
 
 ```bash
 📦 Gaka
