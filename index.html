@@ -46,7 +46,7 @@
         </div>
 
         <div class="cart-container" data-aos="fade-down">
-          <a class="header-button" href="#">
+          <a class="header-button" onclick="abrirCarrinho()">
             🛒
           </a>
         </div>
@@ -192,7 +192,26 @@
     <span class="tooltip-text">Veja as Promoções</span>
   </a>
 
+  
+
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h2>Meu Carrinho</h2>
+      <button onclick="fecharCarrinho()">X</button>
+    </div>
+
+    <div id="cartItems"><p>Seu carrinho está vazio.</p></div>
+
+    <button onclick="finalizar()" class="finalizar-btn">Finalizar compra </button>
+  </div>
+
+  <div class="cart-overlay" id="cartOverlay" onclick="fecharCarrinho()"></div>
+
+  
+
 
   <script src="script.js"></script>
+  
+
 </body>
 </html>

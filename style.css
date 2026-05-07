@@ -374,3 +374,87 @@ a {
   cursor: pointer;
   text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
+
+/*botão carrinho de compras funcional*/
+.cart-sidebar{
+
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 350px;
+  height: 100vh;
+  max-width: 100%;
+  background: #6e2424 ;
+  z-index: 9999;
+  padding: 20px;
+  transition: right 0.4s ease;
+  box-shadow: -4px 0 20px rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+.cart-sidebar.active{
+right: 0;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.cart-header button{
+  background: #d94140;
+  color: aliceblue;          
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+}
+
+.cart-overlay {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0 ,0.6);
+  z-index: 9998;
+  display: none;
+
+}
+
+.cart-overlay.active{
+display: block;
+}
+
+.finalizar-btn {
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px;
+  background: #d94140;
+  color: aliceblue;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+
+}
+
+@media screeen and (max-width: 480px) {
+.cart-sidebar {
+  width: 100%;
+  right: -100%;
+}
+
+body{
+  overflow: hidden;
+}
+.cart-sidebar h2{
+  color: aliceblue;
+}
+
+.cart-sidebar p{
+  color:aliceblue ;
+}
+
+
+}
