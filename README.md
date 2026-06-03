@@ -1,4 +1,4 @@
-https://kauaguilhermealmeidamelo.github.io/BarbeariaGrupo/#
+https://kauaguilhermealmeidamelo.github.io/GakaGrupo/
 
 
 # 🎮 Gaka
